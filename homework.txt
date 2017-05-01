@@ -1,0 +1,30 @@
+#coding=utf-8
+def text():
+    with open('/home/bigdou/PycharmProjects/untitled/pinglun.txt') as file:
+        k = 0
+        for line in file.readlines():
+            if lines in line:
+                k=k+1
+        print k #输出每一个词语在每一条评论中出现的次数
+        return k
+with open('/home/bigdou/PycharmProjects/untitled/shuru.txt') as file:
+    for lines in file.readlines():
+        text()#每一行都调用一次函数
+        print lines
+print#换行
+def text2():
+    with open('/home/bigdou/PycharmProjects/untitled/shuru.txt') as file:
+        for lines in file.readlines():
+            with open('/home/bigdou/PycharmProjects/untitled/pinglun.txt') as file:
+                k = 0
+                for line in file.readlines():
+                    k=k+1
+                return k
+
+f = open('/home/bigdou/PycharmProjects/untitled/shuru.txt', 'rU')#shuru即类似主题啊制作啊那些
+for lined in f.read():
+    fDict = {}.fromkeys(lined,text2())#想把主题啊制作啊做成字典，但就是没办法
+    print fDict
+f.close()#需要close()
+
+
